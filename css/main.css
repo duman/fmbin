@@ -34,13 +34,13 @@ Primary use:
 /*//////////////////////////////////////////////////////////////////
 [ Thank you bar ]*/
 /*---------------------------------------------*/
-.topnav {
+.thankyou {
     background-color: #4BB543;
     overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
-.topnav p {
+.thankyou p {
     margin-left: 0px;
     display: inline-block;
     color: #FFFFFF;
