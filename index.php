@@ -16,6 +16,7 @@
 		}
 
 		$sql = "INSERT INTO subscribers (user_id, name, mail) VALUES (" . "''" . ", " . $name . ", " . $mail . ")";
+		echo $sql;
 	}
 ?>
 
