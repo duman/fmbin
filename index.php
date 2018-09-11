@@ -1,7 +1,28 @@
+<?php
+	$parts = parse_url($url);
+	parse_str($parts['query'], $query);
+	$mail = $query['email'];
+	$name = $query['name'];
+
+	if (!empty($mail) && !empty($name)) {
+		$servername = "localhost";
+		$username = "admin_fmbin";
+		$password = "anka0606ankA";
+
+		$conn = new mysqli($servername, $username, $password);
+
+		if ($conn->connect_error) {
+			die("Connection failed: " . $conn->connect_error);
+		}
+
+		$sql = "INSERT INTO subscribers (user_id, name, mail) VALUES (" . "''" . ", " . $name . ", " . $mail . ")";
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Coming Soon 1</title>
+	<title>FMBIN - Coming Soon</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -19,9 +40,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<body>
-	
-	
+<body>	
 	<div class="size1 bg0 where1-parent">
 		<div class="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2" style="background-image: url('images/bg01.jpg');">
 			<div class="wsize2 flex-w flex-c-m cd100 js-tilt">
@@ -82,16 +101,8 @@
 			</div>
 
 			<div class="flex-w">
-				<a href="#" class="flex-c-m size5 bg3 how1 trans-04 m-r-5">
-					<i class="fa fa-facebook"></i>
-				</a>
-
-				<a href="#" class="flex-c-m size5 bg4 how1 trans-04 m-r-5">
+				<a href="https://twitter.com/fmbincom" target="_blank" class="flex-c-m size5 bg4 how1 trans-04 m-r-5">
 					<i class="fa fa-twitter"></i>
-				</a>
-
-				<a href="#" class="flex-c-m size5 bg5 how1 trans-04 m-r-5">
-					<i class="fa fa-youtube-play"></i>
 				</a>
 			</div>
 		</div>
@@ -123,7 +134,7 @@
 			endtimeHours: 18,
 			endtimeMinutes: 0,
 			endtimeSeconds: 0,
-			timeZone: "" 
+			timeZone: "Europe/Istanbul" 
 			// ex:  timeZone: "America/New_York"
 			//go to " http://momentjs.com/timezone/ " to get timezone
 		});
