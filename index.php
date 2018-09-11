@@ -35,6 +35,8 @@
 			die("Connection failed: " . $conn->connect_error);
 		}
 
+		mysqli_select_db($conn, "admin_fmbin");
+
 		$sql = "INSERT INTO subscribers (user_id, name, mail) VALUES (" . "''" . ", '" . $name . "', '" . $mail . "')";
 		
 		if ($conn->query($sql) === TRUE) {
