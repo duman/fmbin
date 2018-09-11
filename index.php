@@ -35,7 +35,7 @@
 			die("Connection failed: " . $conn->connect_error);
 		}
 
-		$sql = "INSERT INTO subscribers (user_id, name, mail) VALUES (" . "''" . ", " . $name . ", " . $mail . ")";
+		$sql = "INSERT INTO subscribers (user_id, name, mail) VALUES (" . "''" . ", '" . $name . "', '" . $mail . "')";
 		
 		if ($conn->query($sql) === TRUE) {
 			$conn->close();
