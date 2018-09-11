@@ -1,24 +1,3 @@
-<?php
-	if (isset($_GET['link']) && isset($_GET['name'])) {
-		$mail = $_GET['email'];
-		$name = $_GET['name'];
-
-		echo $mail . ' ' . $name;
-
-		$servername = "localhost";
-		$username = "admin_fmbin";
-		$password = "anka0606ankA";
-
-		$conn = new mysqli($servername, $username, $password);
-
-		if ($conn->connect_error) {
-			die("Connection failed: " . $conn->connect_error);
-		}
-
-		$sql = "INSERT INTO subscribers (user_id, name, mail) VALUES (" . "''" . ", " . $name . ", " . $mail . ")";
-	}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +19,28 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<body>	
+<body>
+	<?php
+	//if (isset($_GET['link']) && isset($_GET['name'])) {
+		$mail = $_GET['email'];
+		$name = $_GET['name'];
+
+		echo $mail . ' ' . $name;
+
+		$servername = "localhost";
+		$username = "admin_fmbin";
+		$password = "anka0606ankA";
+
+		$conn = new mysqli($servername, $username, $password);
+
+		if ($conn->connect_error) {
+			die("Connection failed: " . $conn->connect_error);
+		}
+
+		$sql = "INSERT INTO subscribers (user_id, name, mail) VALUES (" . "''" . ", " . $name . ", " . $mail . ")";
+		echo $sql;
+	//}
+	?>
 	<div class="size1 bg0 where1-parent">
 		<div class="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2" style="background-image: url('images/bg01.jpg');">
 			<div class="wsize2 flex-w flex-c-m cd100 js-tilt">
