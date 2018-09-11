@@ -83,7 +83,7 @@
 
 			<div class="p-t-50 p-b-60">
 				<p class="m1-txt1 p-b-36">
-					Our website is <span class="m1-txt2">Coming Soon</span>, follow us for the updates now!
+					Our website is <span class="m1-txt2">being built</span>, subscribe for the updates now!
 				</p>
 
 				<form class="contact100-form validate-form">
@@ -105,7 +105,7 @@
 				</form>
 
 				<p class="s2-txt3 p-t-18">
-					And don’t worry, we hate spam too! You can unsubcribe at anytime.
+					Also don’t worry, we hate spam too! You can unsubscribe at anytime.
 				</p>
 			</div>
 
