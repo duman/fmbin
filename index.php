@@ -134,7 +134,7 @@
 			endtimeHours: 18,
 			endtimeMinutes: 0,
 			endtimeSeconds: 0,
-			timeZone: "Europe/Istanbul" 
+			timeZone: "" 
 			// ex:  timeZone: "America/New_York"
 			//go to " http://momentjs.com/timezone/ " to get timezone
 		});
