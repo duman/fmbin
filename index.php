@@ -4,6 +4,8 @@
 	$mail = $query['email'];
 	$name = $query['name'];
 
+	echo $mail . ' ' . $name;
+
 	if (!empty($mail) && !empty($name)) {
 		$servername = "localhost";
 		$username = "admin_fmbin";
@@ -16,7 +18,6 @@
 		}
 
 		$sql = "INSERT INTO subscribers (user_id, name, mail) VALUES (" . "''" . ", " . $name . ", " . $mail . ")";
-		echo $sql;
 	}
 ?>
 
