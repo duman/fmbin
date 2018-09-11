@@ -31,7 +31,24 @@ Primary use:
   src: url('../fonts/Lato/Lato-Bold.ttf'); 
 }
 
+/*//////////////////////////////////////////////////////////////////
+[ Thank you bar ]*/
+/*---------------------------------------------*/
+.topnav {
+    background-color: #4BB543;
+    overflow: hidden;
+}
 
+/* Style the links inside the navigation bar */
+.topnav p {
+    margin-left: 0px;
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ RS PLUGIN ]*/

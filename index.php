@@ -45,6 +45,9 @@
 			echo "Error: " . $sql . "<br>" . $conn->error;
 			$conn->close();
 		}
+		?>
+		<div class="thankyou" id="thankyou"><p>Thank you for subscribing to the mail list!</p></div>
+		<?php
 	}
 	?>
 	<div class="size1 bg0 where1-parent">
