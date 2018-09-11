@@ -77,9 +77,9 @@
 		
 		<!-- Form -->
 		<div class="size3 flex-col-sb flex-w p-l-75 p-r-75 p-t-45 p-b-45 respon1">
-			<div class="wrap-pic1">
+			<b><div class="wrap-pic1">
 				FMBIN.COM
-			</div>
+			</div></b>
 
 			<div class="p-t-50 p-b-60">
 				<p class="m1-txt1 p-b-36">

@@ -456,6 +456,8 @@ input.input100 {
 /*---------------------------------------------*/
 .wrap-pic1 {
   width: 50%;
+  font-size: 1.5em;
+  color: black;
 }
 .wrap-pic1 img {
   max-width: 100%;
