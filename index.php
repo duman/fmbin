@@ -1,12 +1,10 @@
 <?php
-	$parts = parse_url($url);
-	parse_str($parts['query'], $query);
-	$mail = $query['email'];
-	$name = $query['name'];
+	if (isset($_GET['link']) && isset($_GET['name'])) {
+		$mail = $_GET['email'];
+		$name = $_GET['name'];
 
-	echo $mail . ' ' . $name;
+		echo $mail . ' ' . $name;
 
-	if (!empty($mail) && !empty($name)) {
 		$servername = "localhost";
 		$username = "admin_fmbin";
 		$password = "anka0606ankA";
