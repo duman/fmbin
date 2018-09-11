@@ -88,12 +88,12 @@
 
 				<form class="contact100-form validate-form">
 					<div class="wrap-input100 m-b-10 validate-input" data-validate = "Name is required">
-						<input class="s2-txt1 placeholder0 input100" type="text" name="name" placeholder="Your Name">
+						<input class="s2-txt1 placeholder0 input100" type="text" name="name" placeholder="Your Name" autocomplete="off">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 m-b-20 validate-input" data-validate = "Email is required: ex@abc.xyz">
-						<input class="s2-txt1 placeholder0 input100" type="text" name="email" placeholder="Email Address">
+						<input class="s2-txt1 placeholder0 input100" type="text" name="email" placeholder="Email Address" autocomplete="off">
 						<span class="focus-input100"></span>
 					</div>
 
