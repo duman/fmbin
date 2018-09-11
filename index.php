@@ -37,7 +37,7 @@
 
 		mysqli_select_db($conn, "admin_fmbin");
 
-		$sql = "INSERT INTO subscribers (user_id, name, mail) VALUES (" . "''" . ", '" . $name . "', '" . $mail . "')";
+		$sql = "INSERT INTO subscribers (user_id, name, mail) VALUES (" . "NULL" . ", '" . $name . "', '" . $mail . "')";
 		
 		if ($conn->query($sql) === TRUE) {
 			$conn->close();
