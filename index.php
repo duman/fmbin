@@ -21,11 +21,9 @@
 </head>
 <body>
 	<?php
-	//if (isset($_GET['link']) && isset($_GET['name'])) {
+	if (isset($_GET['email']) && isset($_GET['name'])) {
 		$mail = $_GET['email'];
 		$name = $_GET['name'];
-
-		echo $mail . ' ' . $name;
 
 		$servername = "localhost";
 		$username = "admin_fmbin";
@@ -38,8 +36,14 @@
 		}
 
 		$sql = "INSERT INTO subscribers (user_id, name, mail) VALUES (" . "''" . ", " . $name . ", " . $mail . ")";
-		echo $sql;
-	//}
+		
+		if ($conn->query($sql) === TRUE) {
+			$conn->close();
+		} else {
+			echo "Error: " . $sql . "<br>" . $conn->error;
+			$conn->close();
+		}
+	}
 	?>
 	<div class="size1 bg0 where1-parent">
 		<div class="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2" style="background-image: url('images/bg01.jpg');">
